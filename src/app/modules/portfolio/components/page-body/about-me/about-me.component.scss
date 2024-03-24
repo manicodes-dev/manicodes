@@ -1,0 +1,154 @@
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: #fafafa;
+
+    .about-me {
+        display: flex;
+        gap: 4rem;
+        padding: 0 4rem;
+        margin-bottom: 2rem;
+
+        &>div {
+            width: 50%;
+        }
+
+        .about-me-para {
+            .about-me-img {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    max-width: 60%;
+                }
+            }
+
+            p {
+                margin-top: 1rem;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .about-me-skill {
+        h2{
+            font-size: 1.5rem;
+        }
+        .skills-div {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            .skill {
+                background-color: rgba(153,153,153,.2);
+                padding: 0.8rem 1.3rem;
+                border-radius: 10px;
+                display: flex;
+                gap: 0.5rem;
+                align-items: center;
+
+                img {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+    .qulification-details {
+        display: flex;
+        gap: 4rem;
+        padding: 0 4rem;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+        .qualification-heading {
+            h2{
+                text-align: center;
+            }
+            .qual-line{
+                display: flex;
+                justify-content: center;
+                margin-top: 0.8rem;
+                span {
+                    display: flex;
+                    height: 5px;
+                    width: 3rem;
+                    background-color: #000;
+                    justify-content: center;
+                    border-radius: 5px;
+
+                }
+            }
+        }
+
+        .timeline-details{
+            margin-top: 2rem;
+            position: relative;
+            display: flex;
+            gap: 3rem;
+            flex-direction: column;
+            .timeline-line {
+                height: 100%;
+                width: 5px;
+                background-color: #000;
+                position: absolute;
+                left: -17%;
+            }
+            .s-detail {
+                display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+                position: relative;
+                .timiline-icon {
+                    height: 3rem;
+                    width: 3rem;
+                    background-color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.5rem;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: -25%;
+                }
+            }
+            .s-detail p:first-child {
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+            .s-detail p:nth-child(2) {
+                font-size: 1.2rem;
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .about-section { 
+        gap: 2rem;
+        .about-me { 
+            flex-direction: column;
+            gap: 2rem;
+            padding: 0 2rem;
+            &>div {
+                width: 100%;
+            }
+        }
+
+        .qulification-details {
+            flex-direction: column;
+            padding: 0 5rem;
+            .timeline-details{ 
+                .timeline-line {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}

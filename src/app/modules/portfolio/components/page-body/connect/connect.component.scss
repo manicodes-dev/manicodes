@@ -1,0 +1,41 @@
+.connect-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 3rem;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+
+    a {
+        width: 30%;
+        background-color: black;
+        color: #fff;
+        padding: 1rem 1rem;
+        border-radius: 12px;
+        font-weight: bold;
+        font-size: 1rem;
+        display: flex;
+        gap:1rem;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+
+        p {
+            flex: 1;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width:600px) { 
+    .connect-links{
+        a {
+            width: 90%;
+        }
+    }
+}
