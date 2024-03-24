@@ -52,7 +52,7 @@ export class BlogsComponent implements OnInit {
                                 title :  blog.node.title,
                                 brief :  blog.node.brief,
                                 image : blog.node.coverImage ? blog.node.coverImage.url : "",
-                                tag:'Web Development',
+                                tag:'Web',
                                 postedDate : new Date(blog.node.publishedAt).toLocaleDateString('en-US', {
                                     year: 'numeric',
                                     month: 'long',
